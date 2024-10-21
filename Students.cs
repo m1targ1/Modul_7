@@ -72,6 +72,7 @@ namespace Учёт_студентов
             add_Del_Students.button_EditStudent.Visible = false;
             add_Del_Students.textBox_Student.Visible = false;
             add_Del_Students.textBox_Birth.Visible = false;
+            add_Del_Students.label1.Visible = false;
             add_Del_Students.Show();
         }
 
@@ -83,6 +84,8 @@ namespace Учёт_студентов
             add_Del_Students.textBox_Student.Visible = false;
             add_Del_Students.textBox_Birth.Visible = false;
             add_Del_Students.comboBox_Group.Visible = false;
+            add_Del_Students.label1.Visible = false;
+            add_Del_Students.label2.Visible = false;
             add_Del_Students.Show();
         }
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
