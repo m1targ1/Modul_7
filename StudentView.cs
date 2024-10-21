@@ -23,9 +23,10 @@ namespace Учёт_студентов
             {
                 dataBase.open();
                 DataTable studentsTable = new DataTable();
-                string query = "SELECT * FROM Студенты"; // Замените на ваш SQL-запрос
+                string query = "SELECT * FROM Студенты WHERE ФИО = @studentName";
                 using (SqlCommand command = new SqlCommand(query, dataBase.GetConnection()))
                 {
+                    command.Parameters.AddWithValue("@studentName", selectedStudentName); // Передаем значение для фильтрации
                     SqlDataAdapter adapter = new SqlDataAdapter(command);
                     adapter.Fill(studentsTable); // Заполняем DataTable
                 }
