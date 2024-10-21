@@ -79,6 +79,7 @@ namespace Учёт_студентов
             this.dataGridView_StudentGroup.Name = "dataGridView_StudentGroup";
             this.dataGridView_StudentGroup.ReadOnly = true;
             this.dataGridView_StudentGroup.Size = new System.Drawing.Size(775, 386);
+            this.dataGridView_StudentGroup.CellDoubleClick += dataGridView_StudentGroup_CellDoubleClick;
             this.dataGridView_StudentGroup.TabIndex = 7;
             // 
             // button_ОтчётГруппа
